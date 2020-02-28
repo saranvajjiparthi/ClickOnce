@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(89, 111, 182);
+}
+
+.align
+{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+    background-color: cornsilk;
+  
+}
+.name
+{
+    top: 0%;
+    position: absolute;
+}

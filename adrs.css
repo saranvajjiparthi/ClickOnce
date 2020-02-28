@@ -1,0 +1,103 @@
+.align
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+body{
+    background-color: rgb(54, 50,50);
+}
+.A{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    color: rgb(54, 113, 153);
+    font-size:xx-large;
+
+}
+.name{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 32%;
+    background-color: rgb(54, 113, 153);
+    height: 10%;
+    box-shadow: 3px 3px 3px grey;
+    font-size: 14px;
+    color: white;
+    border: none;
+    
+}
+.num{
+    position: absolute;
+    top: 35%;
+    background-color: rgb(54, 113, 153);
+    height: 10%;
+    color: white;
+    left: 50%;
+    box-shadow: 3px 3px 3px grey;
+    width: 32%;
+    border: none;
+    font-size: 14px;
+}
+.adrs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32%;
+    border: none;
+    height: 10%;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(54, 113, 153);
+    box-shadow: 3px 3px 3px grey;
+}
+.area{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    border: none;
+    width: 32%;
+    background-color: rgb(54, 113, 153);
+    height: 10%;
+    font-size: 14px;
+    box-shadow: 3px 3px 3px grey;
+    color: white;
+}
+.sub{
+    position: absolute;
+    top: 83%;
+    left: 80%;
+    width: 7%;
+    border: none;
+    height: 7%;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color:rgb(54, 113, 153);
+    text-align: center;
+    box-shadow: 3px 3px 3px grey;
+    color: white;
+}
+.map{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+.sub:hover{
+    transform: scale(1.1);
+}
+.into{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.into:hover{
+    background-color: red;
+    transform: scale(1.2);
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='signupnew.css')}}">
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <script>
+        var messages={{messages|safe}};
+        for(var i=0;i<messages.length;i++){
+            alert(messages[i]);
+        }
+    </script>
+    {% endif %}
+{% endwith %}
+<!-- <p>Welcome {{usr}}</p> -->
+    <form action="#" method="POST" >
+    <div>
+        <img class="bg" src="{{url_for('static',filename='background800.svg')}}" alt="backgroundimage">
+
+        <div class="xdiv">  
+        <button class="close">x</button>
+        </div>
+        
+      
+
+
+        <div class="box">
+            <img class="boximage" src="{{url_for('static',filename='box-ex1.svg')}}" alt="signupbox">
+         
+
+          <div class="text0">
+            <h3>Signup to use clickonce</h3>
+
+          </div>
+          <div class="text1">
+              <h6>already have an account?</h6>
+
+          </div>
+          <div class="login">
+            <a href="#"><h5 >Login</h5></a>
+          </div>
+          
+          
+          
+            <div class="mailbox">
+                <input class="mailbox" type="text"  size="20" name="email"placeholder="Enter Email" required>
+            </div>
+            <div>
+                <input class="userbox" type="text"  size="20" name="username"  placeholder="Enter Username" required>
+            </div>
+            <div>
+                <input class="password" type="password"  size="20" name="password"  placeholder="Enter Password" required>
+            </div>
+            <button class="signup">
+                Signup
+            </button>
+
+            <div class="checboxdiv">
+                <input  class ="checkbox" type="checkbox" for="checkbox">
+                <label for="checkbox">Remember me</label>
+            </div>
+            <div class="text2">
+                <a href="#"><h5>Forgot Password</h5></a>
+            </div>
+
+
+            <div class="or">
+                <img src="{{url_for('static',filename='OR.svg')}}" alt="">
+            </div>
+            <div class="using">
+                <h6>sign up using
+                </h6>
+            </div>
+            <div class="outer">
+            
+                    <img class="gmail" src="{{url_for('static',filename='gmail.svg')}}" alt="">
+            
+                    <img  class="facebook" src="{{url_for('static',filename='facebook.svg')}}" alt="">
+              
+                
+                
+                    <img class="twitter" src="{{url_for('static',filename='twitter.svg')}}" alt="">
+                
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</form>
+</body>
+</html>

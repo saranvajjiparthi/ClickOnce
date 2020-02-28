@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+	 {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <script>
+        var messages={{messages|safe}};
+        for(var i=0;i<messages.length;i++){
+            alert(messages[i]);
+        }
+    </script>
+    {% endif %}
+{% endwith %}
+
+	<form  action="" method="POST" >
+	<div class="rabul1">
+		<div class="rabul">
+			<img src="{{url_for('static',filename='layer.svg')}}" alt="">
+		   </div>
+
+		
+		
+		   <div class="ar" >
+			   <h1>Address</h1>
+			   
+			<img src="{{url_for('static',filename='map.svg')}}" alt="">
+			<div class="form-control">
+				<input type="text" name="name" required />
+				<label>Name</label>
+			</div>
+		
+			<div class="form-control">
+				<input type="text" name="mob" required />
+				<label> Mobile Number</label>
+			</div>
+		
+			<div class="form-control">
+				<input type="text" name="dno" required />
+				<label>Door no.</label>
+			</div>
+
+			<div class="form-control">
+				<input type="text" name="sname" required />
+				<label>Street name</label>
+			</div>
+		
+		
+			<div class="form-control">
+				<input type="text" name="landmark" required />
+				<label>Landmark</label>
+			</div>
+
+		</div>
+		<div class="box">
+			<a href="">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				Submit
+			</a>
+		  
+		</div>
+
+	</div>
+   
+ 
+    <link rel="stylesheet" href="{{url_for('static',filename='glow1.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='2.css')}}">
+<script src="{{url_for('static',filename='3.js')}}"></script>
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SOCIAL PANEL HTML -->
+<!--<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://twitter.com/florinpop1705" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/florinpop17" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com/florinpop17" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com/florinpop17" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>-->
